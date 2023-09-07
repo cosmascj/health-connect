@@ -70,7 +70,7 @@ export const Onboarding = ({ navigation }: StackNavigationProps<AuthRoutes, 'Onb
                         return (
                             <View style={styles.swipeCont}>
 
-                                <ImageBackground source={item.url} resizeMode="contain" style={{ width: width, flex: 1 }}>
+                                <ImageBackground source={item.url} resizeMode='cover' style={{ width: width, flex: 1, }}>
                                     <View style={{ position: 'absolute', marginTop: '15%' }}>
                                         <Image source={item.logo} />
                                     </View>
@@ -84,10 +84,10 @@ export const Onboarding = ({ navigation }: StackNavigationProps<AuthRoutes, 'Onb
                                         style={{ flex: 1, width: width, marginTop: '80%', overflow: 'hidden', }}
                                     >
                                         <View style={{ position: 'absolute', top: -10, padding: 15 }}>
-                                            <Text style={{ fontSize: 30, color: pallets.white, textAlign: 'center' }} fontWeight='600'>
+                                            <Text style={{ fontSize: 30, color: pallets.white, }} fontWeight='600'>
                                                 {item.text}
                                             </Text>
-                                            <Text style={{ color: pallets.red, textAlign: 'center' }}>With Hospyta</Text>
+                                            <Text style={{ color: pallets.red }}>With Hospyta</Text>
                                         </View>
 
                                         <View style={{ marginTop: 'auto', marginBottom: '35%', paddingHorizontal: 15 }}>
