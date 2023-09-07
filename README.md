@@ -52,8 +52,9 @@ Note: This a a React-Native Mobile app that will run on Expo Go
 ![simulator_screenshot_19F4DF1F-5262-4D1B-96E1-9B2CF88ECEEB](https://github.com/cosmascj/hospyta-mobile/assets/88615113/d77d3909-5e3e-48ca-b6b6-5b9551c24306)
 
 # UI Guide
-** Reuseable components like button, Text and Input field were design for the application and can be found the Common file inside the components folder
-** Three different Text Fonts have also been Loaded and used in different sections of the Application design
+1. Reuseable components like button, Text and Input field were design for the application and can be found the Common file inside the components folder
+
+2. Three different Text Fonts have also been Loaded and used in different sections of the Application design
 
 # ISSUES
 
