@@ -11,10 +11,10 @@ const width = Dimensions.get('window').width;
 export const Onboarding = ({ navigation }: StackNavigationProps<AuthRoutes, 'Onboarding'>) => {
 
     const slides = [
-        { url: require('../../assets/icons/onbaording1.png'), text: 'Convenient Telehealth: Virtual Consultations and Follow-up... Anytime, Anywhere' },
-        { url: require('../../assets/icons/onboarding6.png'), text: 'Prescriptions Plus.....Your One-Stop Shop For Medicines, Equipment and More' },
-        { url: require('../../assets/icons/onboarding3.png'), text: 'Logistics ....And We will Deliver it all Too, In Record Time' },
-        { url: require('../../assets/icons/onboarding4.png'), text: 'Inspire Your Medical Practice Through the Power of Collaboration and Knowledge Sharing' },
+        { url: require('../../assets/icons/onbaording1.png'), text: 'Convenient Telehealth: Virtual Consultations and Follow-up... Anytime, Anywhere', logo: require('../../assets/icons/logo.png') },
+        { url: require('../../assets/icons/onboarding6.png'), text: 'Prescriptions Plus.....Your One-Stop Shop For Medicines, Equipment and More', logo: require('../../assets/icons/logo.png') },
+        { url: require('../../assets/icons/onboarding3.png'), text: 'Logistics ....And We will Deliver it all Too, In Record Time', logo: require('../../assets/icons/logo.png') },
+        { url: require('../../assets/icons/onboarding4.png'), text: 'Inspire Your Medical Practice Through the Power of Collaboration and Knowledge Sharing', logo: require('../../assets/images/logodark.png') },
 
     ];
     const ref = useRef<any>(null);
@@ -29,15 +29,6 @@ export const Onboarding = ({ navigation }: StackNavigationProps<AuthRoutes, 'Onb
             setCurrentIndex(nextSlideIndex);
         }
     };
-
-    // const scrollBack = () => {
-    //     const nextSlideIndex = currentIndex - 1;
-    //     if (nextSlideIndex !== slides.length) {
-    //         const offset = nextSlideIndex * width;
-    //         ref?.current?.scrollToOffset({ offset });
-    //         setCurrentIndex(nextSlideIndex);
-    //     }
-    // };
     useEffect(() => {
         let timer: string | number | NodeJS.Timeout | undefined;
 
@@ -48,7 +39,7 @@ export const Onboarding = ({ navigation }: StackNavigationProps<AuthRoutes, 'Onb
         } else {
             timer = setTimeout(() => {
                 // Call your function here after 5 seconds
-                // navigation.navigate('Login');
+
                 console.log('DONe')
             }, 5000);
         }
@@ -67,11 +58,6 @@ export const Onboarding = ({ navigation }: StackNavigationProps<AuthRoutes, 'Onb
     return (
 
         <View style={styles.container}>
-            {/* <View style={styles.skipView}>
-            <Image source={require('../../assets/icons/logo.png')} />
-
-
-        </View> */}
             <View style={styles.flowContainer}>
                 <FlatList
                     ref={ref}
@@ -83,23 +69,11 @@ export const Onboarding = ({ navigation }: StackNavigationProps<AuthRoutes, 'Onb
                     renderItem={({ item }) => {
                         return (
                             <View style={styles.swipeCont}>
-                                {/* <Image source={require('../../assets/icons/logo.png')} /> */}
 
                                 <ImageBackground source={item.url} resizeMode="contain" style={{ width: width, flex: 1 }}>
                                     <View style={{ position: 'absolute', marginTop: '15%' }}>
-                                        <Image source={require('../../assets/icons/logo.png')} />
+                                        <Image source={item.logo} />
                                     </View>
-                                    {/* <View style={styles.swipeTextContainer}>
-                                        <Text style={styles.swipeLabel}>{item.text}</Text>
-                                        <Text style={styles.swipeDesc}>{item.text}</Text>
-                                    </View> */}
-                                    {/* <Image source={require('../../assets/icons/logo.png')} /> */}
-                                    {/* <View style={styles.skipView}>
-
-
-                                    </View> */}
-                                    {/* <ImageBackground
-                                        source={require('../../assets/icons/dim.png')} style={{ flex: 1, width: width, marginTop: '80%', }} resizeMode='cover'> */}
                                     <LinearGradient
                                         start={{ x: 0, y: 1 }}
                                         end={{ x: 0, y: 0.3 }}
@@ -121,10 +95,8 @@ export const Onboarding = ({ navigation }: StackNavigationProps<AuthRoutes, 'Onb
                                             <Button onPress={() => navigation.navigate('Login')} style={{ marginBottom: 20 }} text='Sign In' />
                                             <Button onPress={() => navigation.navigate('Signup')} backgroundColor={pallets.transparent} style={{ borderWidth: 1, borderColor: pallets.white }} text='Sign Up' />
                                         </View>
-                                        {/* </ImageBackground> */}
                                     </LinearGradient>
                                 </ImageBackground>
-                                {/* <Image resizeMode='stretch' source={item.url} style={{ width: width }} /> */}
                             </View>
                         );
                     }}
