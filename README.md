@@ -49,17 +49,14 @@ Note: This a a React-Native Mobile app that will run on Expo Go
 2. Use the following links to get the buils
    Android
    ```
-   exp://u.expo.dev/update/242edec3-458d-4e7f-83aa-ac70d94be0b3
+    exp://u.expo.dev/update/2ed74897-adb0-49dd-aaca-df12afacb1fa
    ```
    IOS
    ```
-   exp://u.expo.dev/update/7caa0510-b746-4cb5-8409-15445a1dbaa0
+  
+     exp://u.expo.dev/update/cd5c2b34-5885-4e1d-92f5-d2ba07f0aac2
    ```
 3. Scan the following depending on your Mobile platform of Choice
-<img width="465" alt="Screenshot 2023-09-07 at 09 07 25" src="https://github.com/cosmascj/hospyta-mobile/assets/88615113/182315ac-a11c-47c2-a683-c5e52a6a6420">
-
-
-<img width="467" alt="Screenshot 2023-09-07 at 09 29 03" src="https://github.com/cosmascj/hospyta-mobile/assets/88615113/e3992dc2-1dcd-4327-ae6a-9f43bfbf477e">
 
    
    
