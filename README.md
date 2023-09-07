@@ -75,7 +75,9 @@ Note: This a a React-Native Mobile app that will run on Expo Go
 
 2. Three different Text Fonts have also been Loaded and used in different sections of the Application design
 
+
+
 # ISSUES
 
-1. Android build is currently problematic as a result of issues with react-native-reanimated, you may experience some issues while using the app. But IOS build is fine  Timestamp: 08:59am 7 sept
+1. Finding compatible react-native-reanimated version for expo 49 sdk on android devices
    
