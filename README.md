@@ -70,6 +70,5 @@ Note: This a a React-Native Mobile app that will run on Expo Go
 
 # ISSUES
 
-1. The design Bottom is a bit compacted when coverted to code. Users with slimmer designer will have problem seeing the tab label when in focus
-   Possible Solution: Vertical alignment of the design
+1. Android build is currently problematic as a result of issues with react-native-reanimated, you may experience some issues while using the app. But IOS build is fine  Timestamp: 08:59am 7 sept
    
