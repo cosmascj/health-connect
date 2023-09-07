@@ -91,7 +91,7 @@ export const Home = ({ navigation }: any) => {
                         ))}
                     </View>
 
-                    <View style={[styles.available, { backgroundColor: isAvailable ? pallets.transparentGreen : '#ffcccb' }]}>
+                    <View style={[styles.available, { backgroundColor: isAvailable ? 'rgba(62, 182, 27, 0.08)' : '#ffcccb' }]}>
                         <Text>
                             {isAvailable ? 'I am available' : 'Not Available at the moment'}
                         </Text>
@@ -360,10 +360,9 @@ const styles = StyleSheet.create({
     },
     shedeule: {
         borderRadius: 13,
-        opacity: 0.9,
         alignSelf: 'center', width: '85%',
         marginTop: 8,
-        backgroundColor: '#bdbdbd', flexDirection: 'row', alignItems: 'center',
+        backgroundColor: 'rgba(151, 151, 151, 0.11)', flexDirection: 'row', alignItems: 'center',
         padding: 10, justifyContent: 'space-between',
         paddingVertical: 12,
     },

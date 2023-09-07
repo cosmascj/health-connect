@@ -40,7 +40,7 @@ export default function LoadApp() {
             border: pallets.border,
             card: pallets.white,
             notification: pallets.white,
-            primary: pallets.primaryTextColor,
+            primary: pallets.primaryBlue,
             text: pallets.primaryTextColor,
         },
         dark: false,

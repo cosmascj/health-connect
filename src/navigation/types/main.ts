@@ -7,9 +7,9 @@ export type AppRoutes = {
 export type TabRoutes = {
    
     Home: undefined;
-    Profile: undefined
-    Notification: undefined
     Calender: undefined
+    Notification: undefined
     Shedule: undefined
+    Profile: undefined
   
   };

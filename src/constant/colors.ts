@@ -11,7 +11,7 @@ export const pallets = {
   lightRed: '#FEEFEF',
   textSecondary: '#6B6C7E',
   transparent: 'transparent',
-  primaryBlue: '#4425F5',
+  primaryBlue: 'rgba(68, 37, 245, 1)',
   cardBg: '#F8F7FA',
   shadowColor: 'rgba(0, 0, 0, 0.25)',
   shadowColor2: 'rgba(0, 8, 20, 0.05)',
