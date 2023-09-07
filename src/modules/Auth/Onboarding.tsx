@@ -78,10 +78,8 @@ export const Onboarding = ({ navigation }: StackNavigationProps<AuthRoutes, 'Onb
                                         start={{ x: 0, y: 1 }}
                                         end={{ x: 0, y: 0.3 }}
                                         locations={[0, 1]}
-
                                         colors={['#2B2B2B', '#0000']}
-
-                                        style={{ flex: 1, width: width, marginTop: '80%', overflow: 'hidden', }}
+                                        style={{ flex: 1, width: width, marginTop: '80%', overflow: 'hidden' }}
                                     >
                                         <View style={{ position: 'absolute', top: -10, padding: 15 }}>
                                             <Text style={{ fontSize: 30, color: pallets.white, }} fontWeight='600'>
