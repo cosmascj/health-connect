@@ -1,0 +1,33 @@
+export const pallets = {
+    azure: '#0080ff',
+    white: '#ffffff',
+    primaryTextColor: '#2B2B2B',
+    blackShade: '#393A4A',
+    black: '#000000',
+    border: '#CDCED9',
+    borderGrey: '#CDCED9',
+  lightGrey: '#A7A9BC',
+  red: '#DA1414',
+  lightRed: '#FEEFEF',
+  textSecondary: '#6B6C7E',
+  transparent: 'transparent',
+  primaryBlue: '#4425F5',
+  cardBg: '#F8F7FA',
+  shadowColor: 'rgba(0, 0, 0, 0.25)',
+  shadowColor2: 'rgba(0, 8, 20, 0.05)',
+  cash: '#1B5529',
+  completed: '#287D3C',
+  credit: '#9F1F17',
+  lemonGreen: '#F3FBF5',
+  lightBlue: '#065AD7',
+  lightGreen: 'rgba(40, 125, 60, 0.08)',
+  lightGreen2: '#D4F7DC',
+  text: '#1E0A3C',
+  textGreen: '#15692A',
+  textGreen2: '#3AB558',
+  textGreen3: '#0F3318',
+  transparentGreen: '#EDF9F0',
+
+
+
+}
