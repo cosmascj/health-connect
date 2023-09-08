@@ -91,11 +91,11 @@ export const Home = ({ navigation }: any) => {
                         ))}
                     </View>
 
-                    <View style={[styles.available, { backgroundColor: isAvailable ? 'rgba(62, 182, 27, 0.08)' : '#ffcccb' }]}>
+                    <View style={[styles.available, { backgroundColor: isAvailable ? pallets.lightGreen2 : '#ffcccb' }]}>
                         <Text>
                             {isAvailable ? 'I am available' : 'Not Available at the moment'}
                         </Text>
-                        <View style={{ flex: 0.3, position: 'absolute', right: -1, padding: 20 }}>
+                        <View style={{ flex: 0.3, position: 'absolute', right: -1, padding: 20, }}>
 
                             <Switch
                                 value={isAvailable}
