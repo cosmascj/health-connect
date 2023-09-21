@@ -5,7 +5,7 @@ export type AppRoutes = {
 
 };
 export type TabRoutes = {
-   
+  Drawer: undefined
     Home: undefined;
     Calender: undefined
     Notification: undefined

@@ -14,18 +14,16 @@ export const Home = ({ navigation }: any) => {
     const [dotIndex, setIndex] = useState<number | null>(0);
     const [dotIndex1, setIndex1] = useState<number | null>(0);
     const [isAvailable, setAvailable] = useState(true)
-    const onViewableItemsChanged = useRef<ComponentProps<typeof FlatList>['onViewableItemsChanged']
-    >(({ viewableItems }) => {
+    const onViewableItemsChanged = useRef<ComponentProps<typeof FlatList>['onViewableItemsChanged']>(({ viewableItems }) => {
         if (viewableItems?.[0]) {
             setIndex(viewableItems?.[0]?.index);
         }
     });
-    const onViewableItemsChanged1 = useRef<ComponentProps<typeof FlatList>['onViewableItemsChanged']
-    >(({ viewableItems }) => {
-        if (viewableItems?.[0]) {
-            setIndex1(viewableItems?.[0]?.index);
-        }
-    });
+    // const onViewableItemsChanged1 = useRef<ComponentProps<typeof FlatList>['onViewableItemsChanged']>(({ viewableItems }) => {
+    //     if (viewableItems?.[0]) {
+    //         setIndex1(viewableItems?.[0]?.index);
+    //     }
+    // });
 
     const viewabilityConfig = useRef({ itemVisiblePercentThreshold: 50 });
 
@@ -112,7 +110,7 @@ export const Home = ({ navigation }: any) => {
                         <Ionicons color={pallets.black} name='arrow-forward' size={20} />
                     </View>
 
-                    <View style={{ marginVertical: 20, marginTop: 28 }}>
+                    {/* <View style={{ marginVertical: 20, marginTop: 28 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginStart: 10 }}>
                             <Text style={{ fontSize: 16 }} fontWeight='600'>Community Feed</Text>
                             <Text style={{ color: '#6798E1', fontSize: 14 }}>View All </Text>
@@ -132,14 +130,13 @@ export const Home = ({ navigation }: any) => {
 
                                 return (
                                     <View style={[styles.bannerContainer, { marginRight: last ? 0 : 12 }]}>
-                                        {/* <BannerIcon2 /> */}
                                         <Image resizeMode='stretch' style={{ width: '95%' }} source={require('../../assets/images/Rectangle.png')} />
                                     </View>
                                 );
                             }}
                         />
-                    </View>
-                    <View style={{ marginVertical: 20, marginTop: 28 }}>
+                    </View> */}
+                    {/* <View style={{ marginVertical: 20, marginTop: 28 }}>
                         <View style={styles.shopbody}>
                             <Text style={{ fontSize: 16 }} fontWeight='600'>Shop for Medical Devices</Text>
                             <Text style={{ color: '#6798E1', fontSize: 14 }}>View All </Text>
@@ -170,8 +167,8 @@ export const Home = ({ navigation }: any) => {
                                 );
                             }}
                         />
-                    </View>
-                    <View style={{ marginVertical: 20, marginTop: 28 }}>
+                    </View> */}
+                    {/* <View style={{ marginVertical: 20, marginTop: 28 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginStart: 10 }}>
                             <Text style={{ fontSize: 16 }} fontWeight='600'>Shop for Medicines</Text>
                             <Text style={{ color: '#6798E1', fontSize: 14 }}>View All </Text>
@@ -207,8 +204,8 @@ export const Home = ({ navigation }: any) => {
                                 );
                             }}
                         />
-                    </View>
-                    <View style={{ marginVertical: 20, marginTop: 28 }}>
+                    </View> */}
+                    {/* <View style={{ marginVertical: 20, marginTop: 28 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginStart: 10 }}>
                             <Text style={{ fontSize: 16 }} fontWeight='600'>Shop for Medicines</Text>
                             <Text style={{ color: '#6798E1', fontSize: 14 }}>View All </Text>
@@ -248,17 +245,17 @@ export const Home = ({ navigation }: any) => {
                                 );
                             }}
                         />
-                    </View>
-                    <View style={styles.indicators}>
+                    </View> */}
+                    {/* <View style={styles.indicators}>
                         {[...Array(3)].map((_, i) => (
                             <View
                                 key={i}
                                 style={[styles.indicator, dotIndex1 === i && styles.indicatorActive]}
                             />
                         ))}
-                    </View>
+                    </View> */}
 
-                    <View style={{ marginVertical: 20, marginTop: 28 }}>
+                    {/* <View style={{ marginVertical: 20, marginTop: 28 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginStart: 10 }}>
                             <Text style={{ fontSize: 16 }} fontWeight='600'>News Feeds</Text>
                             <Text style={{ color: '#6798E1', fontSize: 14 }}>View All </Text>
@@ -285,7 +282,7 @@ export const Home = ({ navigation }: any) => {
                             </View>
                         </View>
 
-                    </View>
+                    </View> */}
                 </ScrollView>
 
             </View>

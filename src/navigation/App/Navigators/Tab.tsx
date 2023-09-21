@@ -4,7 +4,7 @@
 import React, { ReactNode } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { RouteProp, useNavigation } from '@react-navigation/native';
-import { Platform, TouchableOpacity, View } from 'react-native';
+import { Dimensions, Platform, StyleSheet, TouchableOpacity, View } from 'react-native';
 
 
 
@@ -24,10 +24,9 @@ export default function TabNavigator() {
     const navigation = useNavigation();
     const TabIcon = ({ name, focused, icon }: { name: string, focused: boolean, icon: ReactNode }) => {
         return (
-            <View style={{ marginStart: 20, borderRadius: 12, paddingVertical: 10, paddingHorizontal: 6, flexDirection: 'row', alignItems: 'center', backgroundColor: focused ? 'rgba(68, 37, 245, 0.1)' : pallets.transparent }}>
+            <View style={{ margin: 20, borderRadius: 12, paddingVertical: 10, paddingHorizontal: 10, flexDirection: 'row', alignItems: 'center', backgroundColor: focused ? 'rgba(68, 37, 245, 0.1)' : pallets.transparent, }}>
                 {icon}
-                {/* {focused && <Text style={{ color: 'blue' }}>{name}</Text>} */}
-                {focused && <Text style={{ marginLeft: 5, color: 'blue' }}>{name}</Text>}
+                {focused && <Text style={{ marginLeft: 5, color: 'blue', fontSize: 12, minWidth: 100 }}>{name}</Text>}
             </View>
         );
     };
@@ -39,13 +38,8 @@ export default function TabNavigator() {
                 tabBarIcon: ({ focused }) => {
                     const name = getTabIcon(route, focused)
                     return <TabIcon focused={focused} icon={name} name={route.name} />
-                    // <TabIcon name={route.name} focused={focused} />
                 },
-                // tabBarIcon: ({ focused, size, color }) => {
-                //     const name = getTabIcon(route, focused);
 
-                //     return name
-                // },
                 tabBarLabel: ({ color, focused }) => {
                     return (
                         focused ?
@@ -63,8 +57,8 @@ export default function TabNavigator() {
                     //     </Text>
                     // );
                 },
-                tabBarStyle: [Platform.OS === 'android' && { height: 60, padding: 10, flexDirection: 'row' }],
-                // tabBarStyle: { height: 60, margin: 10, },
+                // tabBarStyle: [Platform.OS === 'android' && { height: 60, padding: 10, flexDirection: 'row' }],
+                tabBarStyle: { height: 100, paddingHorizontal: 0 },
 
             })
             }
@@ -79,7 +73,7 @@ export default function TabNavigator() {
 
             </>
 
-        </Navigator>
+        </Navigator >
     );
 }
 const getTabIcon = (
@@ -102,3 +96,8 @@ const getTabIcon = (
             return null;
     }
 };
+const styles = StyleSheet.create({
+    tab: {
+        backgroundColor: 'red'
+    }
+})

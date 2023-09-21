@@ -43,9 +43,6 @@ const AuthContextProvider = ({ children }: Props): JSX.Element => {
     const [state, dispatch] = useReducer(authReducer, initialState);
     const [appNav, setNav] = useState(false)
     const queryCache = new QueryCache({});
-
-
-
     const logout = () => {
         queryCache.clear();
         dispatch({ type: 'LOGOUT' });
@@ -56,7 +53,6 @@ const AuthContextProvider = ({ children }: Props): JSX.Element => {
             payload: true,
             type: 'SET_ONBOARDED',
         });
-        // AsyncStorage.setItem('isOnboarded', 'true');
     };
 
     const setLoading = (loading: boolean) => {

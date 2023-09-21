@@ -2,7 +2,6 @@
 import React, { useContext } from 'react';
 import { View, TouchableOpacity, StyleSheet, Image, ScrollView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import * as Application from 'expo-application';
 import { pallets } from '../../../constant/colors';
 import ListItem from '../../../components/common/ListItem';
 import { LocationIcon, LogoutIcon, PostsIcon, SettingsIcon, SupportIcon, WalletIcon } from '../../../assets/icons';
