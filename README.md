@@ -37,9 +37,12 @@
 ```
 
 # GET STARTED
-Note: This a React-Native Mobile app that can run on Expo Go, android apks can be generated as well.
-The app is intended to provide easier access to quality medical consulation to users. Video and audio chat is enabled for face to face consultation. 
-Video sdk utilied is Vonnage API. The app development is in progress.
+Note: This is a React Native mobile app that runs seamlessly on Expo Go. Additionally, Android APKs can be generated for standalone distribution.
+This app is designed to provide users with easy access to quality medical consultations. With integrated video and audio chat, users can engage in face-to-face consultations with medical professionals directly from their mobile devices.
+
+The video functionality is powered by the Vonage API, enabling smooth real-time communication.
+
+🚧 Development is currently in progress.
 
 
 1. Clone Repo
