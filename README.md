@@ -37,7 +37,10 @@
 ```
 
 # GET STARTED
-Note: This a a React-Native Mobile app that will run on Expo Go
+Note: This a React-Native Mobile app that can run on Expo Go, android apks can be generated as well.
+The app is intended to provide easier access to quality medical consulation to users. Video and audio chat is enabled for face to face consultation. 
+Video sdk utilied is Vonnage API. The app development is in progress.
+
 
 1. Clone Repo
 2. Run yarn or expo start to intall Node modules
@@ -58,7 +61,7 @@ Note: This a a React-Native Mobile app that will run on Expo Go
    
    
 # ScreenShots
-![simulator_screenshot_564CD006-F2E4-44B2-824B-32E3F66AFBCA](https://github.com/cosmascj/hospyta-mobile/assets/88615113/36708f71-eaa4-49
+![simulator_screenshot_564CD006-F2E4-44B2-824B-32E3F66AFBCA](https://github.com/cosmascj/health-connect/assets/88615113/36708f71-eaa4-49
 
 ![Simulator Screen Shot - iPhone 14 Pro - 2023-09-07 at 08 01 00](https://github.com/cosmascj/hospyta-mobile/assets/88615113/9a000de1-a00e-4d93-8bcb-a378e0b87487)
 89-8f0f-249d9b262c9d)
